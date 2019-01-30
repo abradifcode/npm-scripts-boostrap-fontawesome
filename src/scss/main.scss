@@ -1,8 +1,7 @@
 @import "_variables";
 
-@import '../../node_modules/bootstrap/scss/bootstrap';
-@import '../../node_modules/font-awesome/scss/font-awesome';
-
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/font-awesome/scss/font-awesome";
 
 /* App imports */
-@import "_basic";
+@import "./layout";
