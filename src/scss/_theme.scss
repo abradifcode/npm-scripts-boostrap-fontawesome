@@ -20,6 +20,8 @@
 }
 .navbar-brand > img {
   height: 48px;
+  position: relative;
+  z-index: 1;
 }
 li.active a {
   background: #687aff !important;
@@ -202,5 +204,55 @@ p.text-left {
   margin-top: 10px;
 }
 .navbar-default {
-  background-color: #fff !important;
+background-color: #fff !important;
+border-bottom: 1px solid #ddd;
+}
+
+p.product {
+    width: 43%;
+    margin: 0 auto;
+}
+#footer{
+      background-image: linear-gradient(to right, #055f9d, #510fb7);
+    color: #fff;
+    padding: 3% 0;
+    float: left;
+    width: 100%;
+}
+.footer-alt{
+  float: left;
+  width: 100%;
+  background-image: linear-gradient(to right, #182559, #2f0e5f)
+}
+.nav-a.nav>li>a {
+    padding: 5px 0px;
+}
+.nav-a.nav>li>a:hover{
+  background: unset !important;
+}
+.foot-font-clr{
+  color: #9099c9;
+}
+.fa {
+  padding: 0px;
+  font-size: 15px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: #fff;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-dribbble {
+  color: white;
+}
+
+ 
+.footer-alt{
+  color: #fff;
+  padding: 10px 0;
 }
