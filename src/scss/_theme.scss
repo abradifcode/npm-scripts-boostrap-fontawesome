@@ -1,5 +1,5 @@
 .cus-icon {
-  font-size: 35px;
+  font-size: $font-h1;
   float: left;
   width: 20%;
 }
@@ -18,10 +18,12 @@
   padding: 10px;
   background: #6070fd;
 }
-.navbar-brand > img {
-  height: 48px;
-  position: relative;
-  z-index: 1;
+.navbar-brand {
+  img {
+    height: 48px;
+    position: relative;
+    z-index: 1;
+  }
 }
 li.active a {
   background: #687aff !important;
@@ -31,34 +33,35 @@ li.active a {
   background: #fff !important;
   border-bottom: 1px solid #ddd;
 }
+
 .cus-text {
   padding: 30px 0 80px 0;
-}
-.cus-text h2 {
-  color: #687aff;
-  text-align: left;
-  position: relative;
-  left: 55%;
-  font-weight: 600;
-  line-height: 1.3;
-  font-size: 35px;
-}
-.cus-text h3 {
-  position: relative;
-  left: 55%;
-  text-align: left;
-  font-weight: 600;
-  z-index: 1;
-  line-height: 1.5;
-  font-size: 28px;
+  h2 {
+    color: #687aff;
+    text-align: left;
+    position: relative;
+    left: 55%;
+    font-weight: $semi-bold;
+    line-height: 1.3;
+    font-size: $font-h1;
+  }
+  h3 {
+    position: relative;
+    left: 55%;
+    text-align: left;
+    font-weight: $semi-bold;
+    z-index: 1;
+    line-height: 1.5;
+    font-size: 28px;
+  }
 }
 .ban-button {
   padding: 10px 15px;
-  background: #fe856f;
+  background: $bg-color-red;
   border-radius: 20px;
   text-decoration: none;
-  color: #fff;
-  font-size: 15px;
+  color: $color-white;
+  font-size: $font-h6;
   position: absolute;
   left: 55%;
 }
@@ -67,31 +70,24 @@ li.active a {
   width: 80%;
   text-align: left;
 }
-.ban-button-a {
-  padding: 10px 15px;
-  background: #fe856f;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 15px;
-}
+.ban-button-a,
 .ban-button-b {
   padding: 10px 15px;
-  background: #fe856f;
+  background: $bg-color-red;
   border-radius: 5px;
   text-decoration: none;
-  color: #fff;
-  font-size: 15px;
+  color: $color-white;
+  font-size: $font-h6;
 }
+
 .section-banner {
   float: left;
   padding: 20px;
   width: 100%;
   background: #f2f6ff;
-}
-.section-banner {
   margin-bottom: 30px;
 }
+
 .mar-spa {
   margin-bottom: 30px;
 }
@@ -99,23 +95,18 @@ li.active a {
   border-bottom: 1px solid #ddd;
   padding: 25px;
   border-left: 5px solid #ff6b5e !important;
-  font-size: 15px;
+  font-size: $font-h6;
   text-align: justify;
   background-color: #fff0f0;
 }
 .font-num {
   font-size: 4em;
-  color: #fff;
+  color: $color-white;
   font-weight: 700;
   display: block;
   text-align: center;
 }
-/*.brand-img {
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0 0 8px 0 #ddd;
-    margin-right: 2%;
-}*/
+
 .font-sec {
   padding: 0 10px;
   background: #febaad;
@@ -127,7 +118,7 @@ li.active a {
 span.font-txt.text-center {
   position: relative;
   top: -15px;
-  color: #fff;
+  color: $color-white;
 }
 .font-alt {
   background: #fff0f0;
@@ -149,7 +140,7 @@ span.font-txt.text-center {
   margin-bottom: 20px;
 }
 .blog-but {
-  background-color: #f1f6f9;
+  background-color: $bg-color-gray;
   position: relative;
   padding: 10px;
   top: -60px;
@@ -159,7 +150,7 @@ span.font-txt.text-center {
 .img-icon {
   padding: 5px;
   background: blue;
-  color: #fff;
+  color: $color-white;
   width: 50px;
 }
 .icon {
@@ -186,7 +177,7 @@ p.text-left {
 .section-update {
   float: left;
   width: 100%;
-  background: #f1f6f9;
+  background: $bg-color-gray;
   padding: 5% 0;
 }
 .update {
@@ -194,7 +185,7 @@ p.text-left {
 }
 .btn-clr {
   background-image: linear-gradient(to right, #79ccff, #6170ff);
-  color: #fff;
+  color: $color-white;
   border: unset;
   font-weight: 550;
 }
@@ -204,55 +195,64 @@ p.text-left {
   margin-top: 10px;
 }
 .navbar-default {
-background-color: #fff !important;
-border-bottom: 1px solid #ddd;
+  background-color: #fff !important;
+  border-bottom: 1px solid #ddd;
 }
 
 p.product {
-    width: 43%;
-    margin: 0 auto;
+  width: 43%;
+  margin: 0 auto;
 }
-#footer{
-      background-image: linear-gradient(to right, #055f9d, #510fb7);
-    color: #fff;
-    padding: 3% 0;
-    float: left;
-    width: 100%;
-}
-.footer-alt{
+#footer {
+  background-image: linear-gradient(to right, #055f9d, #510fb7);
+  color: $color-white;
+  padding: 3% 0;
   float: left;
   width: 100%;
-  background-image: linear-gradient(to right, #182559, #2f0e5f)
 }
-.nav-a.nav>li>a {
-    padding: 5px 0px;
+.footer-alt {
+  float: left;
+  width: 100%;
+  background-image: linear-gradient(to right, #182559, #2f0e5f);
 }
-.nav-a.nav>li>a:hover{
+.nav-a.nav {
+  li {
+    a {
+      padding: 5px 0px;
+    }
+  }
+}
+.nav-a.nav > li > a:hover {
   background: unset !important;
 }
-.foot-font-clr{
+.foot-font-clr {
   color: #9099c9;
 }
 .fa {
   padding: 0px;
-  font-size: 15px;
+  font-size: $font-h6;
   width: 25px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  color: #fff;
+  color: $color-white;
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
-.fa-facebook, .fa-twitter, .fa-linkedin, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-dribbble {
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram,
+.fa-pinterest,
+.fa-dribbble {
   color: white;
 }
 
- 
-.footer-alt{
-  color: #fff;
+.footer-alt {
+  color: $color-white;
   padding: 10px 0;
 }
